@@ -12,7 +12,8 @@ double timeInAir(double angle) {
 }
 
 int distance(double angle) {
-  return ((Velocity * cos(angle)) * timeInAir(angle));
+  angle = M_PI * angle / 180;
+  return (int) round(Velocity * cos(angle) * timeInAir(angle));
 }
 
 void printIntroduction() {
@@ -22,4 +23,5 @@ void printIntroduction() {
   std::cout << "You only have 10 cannonballs for this target.." << std::endl;
   std::cout << "Let's begin..." << std::endl;
 }
+
 
