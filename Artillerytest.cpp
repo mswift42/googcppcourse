@@ -5,7 +5,7 @@
 #include "./Artillery.cpp"
 
 TEST(DistanceTest, TestDistpancePerAngle){
-  ASSERT_EQ(1242, distance(0.78));
+  ASSERT_EQ(798, distance(20));
 }
 
 int main(int argc, char** argv) {
