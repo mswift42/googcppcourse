@@ -4,8 +4,8 @@
 #include <gtest/gtest.h>
 #include "./Artillery.cpp"
 
-TEST(TimeInAirTest, timeInAir){
-  ASSERT_EQ(2.4, timeInAir(50));
+TEST(DistanceTest, TestDistpancePerAngle){
+  ASSERT_EQ(1242, distance(0.78));
 }
 
 int main(int argc, char** argv) {
