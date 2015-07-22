@@ -10,3 +10,28 @@
 // for-loops to determine if a number is a perfect square or a sum of a
 // series. (Note: depending on your machine and your program, it can take
 // quite a while to find this number.)
+
+#include <iostream>
+#include <cmath>
+
+bool isPerfectSquare(long n) {
+  int sqr = (int) sqrt(n);
+  return sqr * sqr == n;
+}
+
+
+int main() {
+  long start = 1225;
+  int incrementer = 50;
+  while (true) {
+    start += incrementer;
+    if (isPerfectSquare(start)) {
+      std::cout << start << std::endl;
+      std::cout << incrementer << std::endl;
+      return 0;
+    }
+    ++incrementer;
+
+  }
+  
+}
