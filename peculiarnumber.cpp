@@ -1,4 +1,4 @@
-// peculiarnumber.cpp
+// peculiarnumber.cpp Martin Haesler
 // Exercise 1
 // The integer 36 has a peculiar property: it is a perfect square, and is
 // also the sum of the integers from 1 through 8. The next such number is
